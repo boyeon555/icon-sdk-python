@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.4"
+  - "3.6"
 
 jobs:
  include:
@@ -8,11 +8,11 @@ jobs:
    - virtualenv venv
    - . venv/bin/activate
   install:
-   - pip3 install -r requirements.txt
+   - pip install -r requirements.txt
    - git clone https://repo.theloop.co.kr/icon/icon-sdk/icon-sdk-java-test.git
    - cd icon-sdk-java-test
    - npm install
    - node index.js
    - cd ..
   script:
-   - python3 setup.py test
+   - python setup.py test
