@@ -13,10 +13,3 @@ language: python
       - cd ..
     script:
       - python3 setup.py test
-    deploy:
-      provider: testpypi
-      distributions: sdist bdist_wheel
-      on:
-        branch: master
-        user: iconfoundation
-        password:
