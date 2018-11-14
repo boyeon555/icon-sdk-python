@@ -1,11 +1,12 @@
 language: python
+python:
+  - "3.4"
 
 jobs:
  include:
   before_install:
    - virtualenv venv
    - . venv/bin/activate
-   - pip install
   install:
    - pip3 install -r requirements.txt
    - git clone https://repo.theloop.co.kr/icon/icon-sdk/icon-sdk-java-test.git
