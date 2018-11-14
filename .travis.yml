@@ -8,7 +8,7 @@ jobs:
    - virtualenv venv
    - . venv/bin/activate
 
-   - git clone https://repo.theloop.co.kr/icon/icon-sdk/icon-sdk-java-test.git
+   - git clone https://gitlab-id:gitlab-password@repo.theloop.co.kr/icon/icon-sdk/icon-sdk-java-test.git
    - cd icon-sdk-java-test
    - npm install
    - node index.js
