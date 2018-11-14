@@ -1,12 +1,10 @@
 language: python
 python:
   - "3.6"
-
+virtualenv:
+  system_site_packages: true
 jobs:
  include:
-  before_install:
-   - virtualenv venv
-   - . venv/bin/activate
   install:
    - pip install -r requirements.txt
    - git clone https://repo.theloop.co.kr/icon/icon-sdk/icon-sdk-java-test.git
