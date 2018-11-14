@@ -17,6 +17,6 @@ language: python
       provider: testpypi
       distributions: sdist bdist_wheel
       on:
-        branch: develop
+        branch: master
         user: iconfoundation
         password:
