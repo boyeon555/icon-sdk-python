@@ -2,13 +2,11 @@ language: python
 python:
 - "3.6"
 
-
 install:
 - git clone "https://oauth2:$Gitlab_token@repo.theloop.co.kr/icon/icon-sdk/icon-sdk-java-test.git"
 - cd icon-sdk-java-test
 - npm install
 - node index.js &
 
-script:
-- python3 ./setup.py test
+
 
