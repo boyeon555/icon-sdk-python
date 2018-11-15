@@ -13,9 +13,10 @@ script:
 - echo "123"
 
 deploy:
-  provider: testpypi
+  provider: pypi
   distributions: sdist bdist_wheel
+  server: https://testpypi.python.org/pypi
+  user: iconfoundation
+  password: $Pypi_pw
   on:
     branch: master
-    user: iconfoundation
-    password: $Pypi_pw
