@@ -4,8 +4,12 @@ python:
 jobs:
 include:
   before_install:
+    - echo 111
     - virtualenv venv
     - . venv/bin/activate
+    - echo 222
+    - pip install -r requirements.txt
+    - echo 333
   install:
    - git clone "https://oauth2:$Gitlab_token@repo.theloop.co.kr/icon/icon-sdk/icon-sdk-java-test.git"
    - cd icon-sdk-java-test
