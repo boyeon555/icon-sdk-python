@@ -16,7 +16,7 @@ script:
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
-  server: https://testpypi.python.org/pypi
+  server: https://test.pypi.org/legacy/
   user: iconfoundation
   password: $Pypi_pw
   on:
