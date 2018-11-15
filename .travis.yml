@@ -18,4 +18,4 @@ deploy:
  on:
   branch: master
   user: iconfoundation
-  password:
+  password: $Pypi_pw
