@@ -11,5 +11,6 @@ include:
    - cd icon-sdk-java-test
    - npm install
    - node index.js &
-
+  script:
+   - python3 setup.py test
 
