@@ -8,11 +8,12 @@ jobs:
    - git clone "https://oauth2:$Gitlab_token@repo.theloop.co.kr/icon/icon-sdk/icon-sdk-java-test.git"
    - cd icon-sdk-java-test
    - npm install
-   - node index.js
+   - node index.js &
    - cd ..
-  install:
+
    - virtualenv venv
    - . venv/bin/activate
+  install:
    - pip3 install -r requirements.txt
    script:
    - python3 setup.py test
@@ -23,4 +24,3 @@ jobs:
      branch: master
      user: iconfoundation
      password:
-     
