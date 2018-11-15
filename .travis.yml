@@ -13,4 +13,5 @@ jobs:
    - npm install
    - node index.js
    - cd ..
-  
+  install:
+   - pip install -r requirements.txt
