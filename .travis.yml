@@ -9,10 +9,12 @@ install:
 - npm install
 - node index.js &
 - cd ..
-- rm -rf icon-sdk-java-test
 
 script:
 - python setup.py test
+
+before_deploy:
+- rm -rf icon-sdk-java-test
 
 deploy:
   provider: pypi
