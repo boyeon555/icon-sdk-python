@@ -13,9 +13,9 @@ script:
 - python setup.py test
 
 deploy:
- provider: testpypi
- distributions: sdist bdist_wheel
- on:
-  branch: master
-  user: iconfoundation
-  password: $Pypi_pw
+  provider: testpypi
+  distributions: sdist bdist_wheel
+  on:
+    branch: master
+    user: iconfoundation
+    password: $Pypi_pw
