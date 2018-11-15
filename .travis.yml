@@ -16,7 +16,6 @@ jobs:
    - cd ..
   install:
    - pip install -r requirements.txt
-  script:
    - python3 setup.py test
   deploy:
     provider: testpypi
